@@ -1,4 +1,52 @@
+/// Fonts ///
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+//Family
+$font-prim: 'Roboto', serif;
+
+//Weight
+$regular: 400;
+$bold: 700;
+
+/// Colors ///
+
+// Pallet
+$blue: #377DFF;
+$blue-light: #7EC2F3;
+
+$green: #38CB8A;
+$green-light: #D7F5E7;
+
+$yellow: #FFA601;
+$yellow-light: #FFCA66;
+
+$red: #FF5630;
+$red-light: #ffa996;
+
+$pink-dark:#EF5DA8;
+$pink: #F178B6;
+$pink-light: #FCDEED;
+
+$purple-dark: #5D5FEF;
+$purple: #7879F1;
+$purple-light:#A5A6F6;
 
 
 
+//Generic
+$black: #171717;
+$gray-dark: #8F8F8F;
+$gray: #B2B2B2;
+$gray-light: #CCCCCC;
+$white: #efefef;
+
+//Background
+$bg-prim: #cdcdcd;
+
+//Core Colours
+$card-prim: #fbf7e6;
+
+//Text
+$text-prim: #201b1f;
+$text-sec: #f9f9f9;
 
