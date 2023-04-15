@@ -1,12 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
+import './styles/app.scss'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className='test'>
-      <h1>React App</h1>
+    <div className="app">
+      React App
     </div>
   )
 }
