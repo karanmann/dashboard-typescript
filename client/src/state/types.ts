@@ -8,7 +8,7 @@ export interface Month {
   id: string;
   month: string;
   revenue: string;
-  expense: string;
+  expenses: string;
   nonOperationalExpenses: number;
   operationalExpenses: number;
 }
@@ -17,7 +17,7 @@ export interface Day {
   id: string;
   date: string;
   revenue: string;
-  expense: string;
+  expenses: string;
 }
 
 export interface GetKpisResponse {
