@@ -2,8 +2,8 @@ import React, { useMemo } from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import BoxHeader from "@/components/BoxHeader";
 import DashboardBox from "@/components/DashboardBox";
-import { useGetKpisQuery, useGetProductsQuery } from "@/state/api";
 import FlexBetween from "@/components/FlexBetween";
+import { useGetKpisQuery, useGetProductsQuery } from "@/state/api";
 import {
   ResponsiveContainer,
   CartesianGrid,
