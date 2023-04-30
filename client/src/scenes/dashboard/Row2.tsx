@@ -10,13 +10,16 @@ import {
   LineChart,
   XAxis,
   YAxis,
+  ZAxis,
   Legend,
   Line,
   Tooltip,
   PieChart,
   Pie,
+  Scatter,
   Sector,
   Cell,
+  ScatterChart,
 } from "recharts";
 
 type Props = {};
@@ -30,6 +33,7 @@ const Row2 = (props: Props) => {
     { name: "Group A", value: 600 },
     { name: "Group B", value: 400 },
   ];
+
   const pieColors = [palette.primary[800], palette.primary[300]];
 
   const operationalExpenses = useMemo(() => {
@@ -46,6 +50,19 @@ const Row2 = (props: Props) => {
       )
     );
   }, [operationalData]);
+
+  const productExpenseData = useMemo(() => {
+    return (
+      productData &&
+      productData.map(({ _id, price, expense }) => {
+        return {
+          id: _id,
+          price: price,
+          expense: expense,
+        };
+      })
+    );
+  }, [productData]);
 
   return (
     <>
@@ -128,18 +145,65 @@ const Row2 = (props: Props) => {
           </PieChart>
           <Box ml="-0.7rem" flexBasis="40%" textAlign="center">
             <Typography variant="h5">Target Sales</Typography>
-            <Typography m="0.3rem 0" color={palette.primary[300]}>83</Typography>
-            <Typography variant="h6">Finance goals of the campaign that is desired</Typography>
+            <Typography m="0.3rem 0" color={palette.primary[300]}>
+              83
+            </Typography>
+            <Typography variant="h6">
+              Finance goals of the campaign that is desired
+            </Typography>
           </Box>
           <Box flexBasis="40%">
             <Typography variant="h5">Losses in Revenue</Typography>
             <Typography variant="h6">Losses are down 25%</Typography>
-            <Typography mt="0.4rem" variant="h5">Profit Margins</Typography>
-            <Typography variant="h6">Margin are up by 30% from last month</Typography>
+            <Typography mt="0.4rem" variant="h5">
+              Profit Margins
+            </Typography>
+            <Typography variant="h6">
+              Margin are up by 30% from last month
+            </Typography>
           </Box>
         </FlexBetween>
       </DashboardBox>
-      <DashboardBox gridArea="f"></DashboardBox>
+      <DashboardBox gridArea="f">
+        <BoxHeader title="Product Prices vs Expenses" sideText="+4%" />
+        <ResponsiveContainer width="100%" height="100%">
+          <ScatterChart
+            margin={{
+              top: 20,
+              right: 25,
+              bottom: 40,
+              left: -10,
+            }}
+          >
+            <CartesianGrid stroke={palette.grey[800]} />
+            <XAxis
+              type="number"
+              dataKey="price"
+              name="price"
+              axisLine={false}
+              tickLine={false}
+              style={{ fontSize: "10px" }}
+              tickFormatter={(v) => `SEK${v}`}
+            />
+            <YAxis
+              type="number"
+              dataKey="expense"
+              name="expense"
+              axisLine={false}
+              tickLine={false}
+              style={{ fontSize: "10px" }}
+              tickFormatter={(v) => `SEK${v}`}
+            />
+            <ZAxis type="number" range={[20]} />
+            <Tooltip formatter={(v) => `SEK${v}`} />
+            <Scatter
+              name="Product Expense Ratio"
+              data={productExpenseData}
+              fill={palette.tertiary[500]}
+            />
+          </ScatterChart>
+        </ResponsiveContainer>
+      </DashboardBox>
     </>
   );
 };
