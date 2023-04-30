@@ -11,13 +11,11 @@ import {
   XAxis,
   YAxis,
   ZAxis,
-  Legend,
   Line,
   Tooltip,
   PieChart,
   Pie,
   Scatter,
-  Sector,
   Cell,
   ScatterChart,
 } from "recharts";
