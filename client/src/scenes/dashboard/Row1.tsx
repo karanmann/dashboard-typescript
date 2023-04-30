@@ -142,7 +142,7 @@ const Row1 = () => {
         <BoxHeader
           title="Profit and Revenue"
           subTitle="top line represents revenue, bottom line represents expenses"
-          sideText="+4%"
+          sideText="+8%"
         />
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
@@ -201,7 +201,7 @@ const Row1 = () => {
         <BoxHeader
           title="Revenue Month by Month"
           subTitle="graph representing the revenue month by month"
-          sideText="+4%"
+          sideText="+10%"
         />
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
