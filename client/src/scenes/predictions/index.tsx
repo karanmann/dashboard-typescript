@@ -29,7 +29,7 @@ const Predictions = (props: Props) => {
     const monthData = kpiData[0].monthlyData;
 
     const formatted: Array<DataPoint> = monthData.map(
-      ({ revenue }, index: number) => {
+      ({ revenue }, index) => {
         return [index, revenue];
       }
     );
