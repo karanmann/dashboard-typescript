@@ -25,6 +25,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 /* ROUTES */
+app.get('/', (req, res) => {
+  res.send('Welcome to Dashboard data API')
+})
 app.use("/kpi", kpiRoutes);
 app.use("/product", productRoutes)
 app.use("/transaction", transactionRoutes)
