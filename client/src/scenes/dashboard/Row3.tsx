@@ -25,7 +25,7 @@ const Row3 = () => {
     { field: "id", headerName: "ID", flex: 1 },
     { field: "buyer", headerName: "Buyer", flex: 0.67},
     { field: "amount", headerName: "Amount", flex: 0.35, renderCell: (params: GridCellParams) => `SEK${params.value}` },
-    { field: "productIds", headerName: "Count", flex: 0.1, renderCell: (params: GridCellParams) => params.value.length },
+    { field: "productIds", headerName: "Count", flex: 0.1, renderCell: (params: GridCellParams) => (params.value as Array<string>).length },
   ]
 
   return (
