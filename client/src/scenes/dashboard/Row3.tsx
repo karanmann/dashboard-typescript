@@ -178,7 +178,26 @@ const Row3 = () => {
           ))}
         </FlexBetween>
       </DashboardBox>
-      <DashboardBox gridArea="j"></DashboardBox>
+      <DashboardBox gridArea="j">
+        <BoxHeader title="Overall Summary and Explination Data" sideText="60%" />
+        <Box
+          height="15px"
+          margin="1.25rem 1rem 1rem 1rem"
+          bgcolor={palette.primary[800]}
+          borderRadius="1rem"
+          >
+          <Box
+          height="15px"
+          bgcolor={palette.primary[400]}
+          borderRadius="1rem"
+          width="60%"
+          ></Box>
+        </Box>
+        <Typography 
+          margin="0 1rem"
+          variant="h5"
+          >Targets on track as per the predictions and plans for Q2</Typography>
+      </DashboardBox>
     </>
   );
 };
