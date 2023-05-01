@@ -21,12 +21,13 @@ export interface Day {
 }
 
 export interface GetKpisResponse {
+  [x: string]: any;
   id: string;
   _id: string;
   __v: number;
-  totelProfit: number;
-  totelRevenue: number;
-  totelExpenses: number;
+  totalProfit: number;
+  totalRevenue: number;
+  totalExpenses: number;
   expensesByCategory: ExpensesByCategory
   monthlyData: Array<Month>;
   dailyData: Array<Day>;
