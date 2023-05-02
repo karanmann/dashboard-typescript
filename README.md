@@ -58,6 +58,8 @@ npm run dev
 - Mongoose
 - Morgan
 - MongoDB
+- Data-Model -
+<img width="570" alt="Datamodel" src="https://user-images.githubusercontent.com/62376840/235621865-9bdda1f5-2e77-41fe-ae99-7bcb81327bc0.png">
 
 #### Deployment
 
