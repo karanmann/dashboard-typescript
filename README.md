@@ -1,10 +1,12 @@
-# React Dashboard Fullstack App
+## Description
 
-I wanted to try and make a FullStack Dashboard using MUI, Recharts, and Regression. My idea behind this project was to practice some basic concepts and push to see what more I could do. I did follow some tutorials on Youtube to improve the design and data.
+I wanted to try and make a FullStack Dashboard using MUI, Recharts and Regression. My idea behind this project was to practice some basic concepts as well as push to see what more I could do. I did follow some tutorials on Youtube to improve the design and data.
+
+#### [View Live Project Here](https://dashboard-typescript-frontend.vercel.app/)
 
 ## Installation
 
-Use the node package manager to install node modules both for the front and backend.
+Use the node package manager to install node modules both for the frontend and backend
 
 #### Backend
 You will also need the following -
@@ -14,7 +16,9 @@ You will also need the following -
 PORT=1337
 MONGODB_URL=<Your MongoDB Cluster Address>
 ```
-- Deploy the dummy data to the MongoDB cluster. The code to reset the group and upload the data is in ```/server/index.js```
+
+- Deploy the dummy data to MongoDB cluster. The code to reset the cluster and upload the data is in ```/server/index.js```
+
 
 - Then run the backend by - 
 ```bash
@@ -39,6 +43,7 @@ npm run dev
 ## Tech Used
 
 #### Frontend
+
 - React (with Typescript, Hooks, and Router)
 - Redux Toolkit Query
 - Material UI
@@ -46,6 +51,7 @@ npm run dev
 - [Recharts](https://recharts.org/en-US/)
 
 #### Backend
+
 - Express
 - Node.js
 - Helmet
@@ -65,3 +71,4 @@ npm run dev
 <img width="auto" alt="Dashboard" src="https://user-images.githubusercontent.com/62376840/235883259-55026228-3c0a-4f61-bff5-6dd588b8a83c.png">
 
 <img width="auto" alt="Regression Line" src="https://user-images.githubusercontent.com/62376840/235883277-da249805-9911-41f9-874f-a47a040c7d1c.png">
+
