@@ -60,7 +60,8 @@ npm run dev
 - [Version Control - Github]()
 
 
-### [View Live Project Here](https://dashboard-typescript-frontend.vercel.app/)
+#### [View Live Project Here](https://dashboard-typescript-frontend.vercel.app/)
 
 <img width="auto" alt=Dashboard" src="https://user-images.githubusercontent.com/62376840/235883259-55026228-3c0a-4f61-bff5-6dd588b8a83c.png">
+
 <img width="auto" alt="Regression Line" src="https://user-images.githubusercontent.com/62376840/235883277-da249805-9911-41f9-874f-a47a040c7d1c.png">
