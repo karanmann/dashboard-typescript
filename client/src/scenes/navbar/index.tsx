@@ -13,10 +13,21 @@ const Navbar = (props: Props) => {
     <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
       {/* {LEFT SIDE} */}
       <FlexBetween gap="0.75rem">
-        <DashboardIcon sx={{ fontSize: "28px" }} />
-        <Typography variant="h4" fontSize="16px">
+        <DashboardIcon sx={{ fontSize: "36px" }} />
+        <Link 
+            to="/"
+            onClick={() => setSelected("dashboard")}
+            style={{
+              color: selected === "dashboard" ? "inherit" : palette.grey[700],
+              textDecoration: "inherit",
+              textTransform: "uppercase"
+            }}
+            >
+             <Typography variant="h4" fontSize="34px">
           Dashboard
         </Typography>
+          </Link>
+       
       </FlexBetween>
 
       {/* {RIGHT SIDE} */}
@@ -28,7 +39,8 @@ const Navbar = (props: Props) => {
             style={{
               color: selected === "dashboard" ? "inherit" : palette.grey[700],
               textDecoration: "inherit",
-              textTransform: "uppercase"
+              textTransform: "uppercase",
+              fontSize: "18px"
             }}
             >
             Dashboard
@@ -41,7 +53,8 @@ const Navbar = (props: Props) => {
             style={{
               color: selected === "predictions" ? "inherit" : palette.grey[700],
               textDecoration: "inherit",
-              textTransform: "uppercase"
+              textTransform: "uppercase",
+              fontSize: "18px"
             }}
             >
             Predictions
