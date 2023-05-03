@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from '@/scenes/navbar'
 import Dashboard from "./scenes/dashboard";
 import Predictions from "./scenes/predictions";
-import Footer from "./scenes/footer";
 
 const App = () => {
   const theme = useMemo(() => createTheme(themeSettings), []);
